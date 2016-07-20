@@ -1,5 +1,5 @@
 #!/usr/bin/python2
-#crontab set to 0,30  //every 30min download latest comic...
+#crontab set to 0,30 * * * *  //every 30min download latest comic...
 
 import json
 import urllib

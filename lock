@@ -25,6 +25,6 @@ convert $IMAGE -level 0%,100%,0.6 -blur $BLURTYPE \
 				    -annotate +1+201 'Type password to unlock' \
 				    -annotate -1+201 'Type password to unlock' \
 	-fill white -gravity center -annotate +0+200 'Type password to unlock' \
-	- | composite -gravity center /home/al3xst/.scripts/xkcd.png - $IMAGE
+	- | composite -gravity center $XKCD - $IMAGE
 i3lock --textcolor=ffffff00 --insidecolor=ffffff1c --ringcolor=ffffff3e --linecolor=ffffff00 --keyhlcolor=00000080 --ringvercolor=00000000 --insidevercolor=0000001c --ringwrongcolor=00000055 --insidewrongcolor=0000001c  -i $IMAGE
 rm $IMAGE
